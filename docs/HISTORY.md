@@ -1,6 +1,6 @@
 # Version history and researcher degrees of freedom
 
-Transparent record of what changed after seeing results. Dates: TODO (fill from your notes).
+Transparent record of what changed after seeing results. Dates: 2026-11-06.
 
 | Version | Change | Reason |
 |---|---|---|

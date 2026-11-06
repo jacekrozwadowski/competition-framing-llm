@@ -4,7 +4,7 @@
 |---|---|---|---|---|---|---|---|
 | `qwen2.5-3b` | `Qwen/Qwen2.5-3B` | `3aab1f1954e9cc14eb9509a215f9e5ca08227a9b` | `Qwen/Qwen2.5-3B-Instruct` | `aa8e72537993ba99e69dfaafa59ed015b17504d1` | FP16 | L4 | |
 | `qwen2.5-7b` | `Qwen/Qwen2.5-7B` | `d149729398750b98c0af14eb82c78cfe92750796` | `Qwen/Qwen2.5-7B-Instruct` | `a09a35458c702b33eeacc393d103063234e8bc28` | 4-bit | L4 | |
-| `qwen2.5-14b` | `Qwen/Qwen2.5-14B` | `97e1e76335b7017d8f67c08a19d103c0504298c9` | `Qwen/Qwen2.5-14B-Instruct` | `cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8` | 4-bit | G4 | slow on T4 |
+| `qwen2.5-14b` | `Qwen/Qwen2.5-14B` | `97e1e76335b7017d8f67c08a19d103c0504298c9` | `Qwen/Qwen2.5-14B-Instruct` | `cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8` | 4-bit | G4 | |
 | `mistral-7b` | `mistralai/Mistral-7B-v0.1` | `27d67f1b5f57dc0953326b2601d68371d40ea8da` | `mistralai/Mistral-7B-Instruct-v0.2` | `63a8b081895390a26e140280378bc85ec8bce07a` | 4-bit | L4 | Instruct: prefill "Answer:" / "Odpowiedź:" |
 | `bielik3-11b` | `speakleash/Bielik-11B-v3-Base-20250730` | `3cdb602aaced3e481761907cfb58434c27732f8b` | `speakleash/Bielik-11B-v3.0-Instruct` | `735bfee1125fe8b497ac2769de94822a11f77167` | 4-bit | G4 | gated on Hugging Face (token required) |
 | `gemma4-12b` | `google/gemma-4-12B` | `1a2c7729392586f5ecddae8807ee2ef741eabb9a` | `google/gemma-4-12B-it` | `43c9d014b231474fa7212dbb48a762566c2b255d` | FP16 | G4 | gated; Instruct: prefill "Reply:" / "Odpowiedź:", empty reasoning block in chat template |

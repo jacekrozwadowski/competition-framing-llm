@@ -35,7 +35,8 @@ The analysis recomputes everything from the raw log-probabilities in the CSV
 
 ## Re-run the measurement (GPU)
 
-Open the notebook in Colab with a T4 or better GPU, set `QUICK = True` for a smoke test, then
+Open the notebook in Colab with a GPU with at least 24 GB (L4) for the smaller models; 
+the larger ones (Qwen2.5-14B, Bielik-11B, Gemma-4-12B) were run on a G4 (about 98 GB), set `QUICK = True` for a smoke test, then
 `QUICK = False`. Cells must be run in order. The run is resumable (`results_partial_v3.csv`).
 Gemma and Bielik are gated on Hugging Face: accept their licenses and add an `HF_TOKEN`
 secret. No token or personal data is stored in this repository.
