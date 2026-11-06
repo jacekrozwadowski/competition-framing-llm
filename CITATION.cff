@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite it as below."
+title: "Scarcity framing and semantic bias in competitive choices of open-weight language models: data and code"
+type: dataset
+authors:
+  - family-names: Rozwadowski
+    given-names: Jacek
+version: "3.4"
+date-released: "2026-11-06"
+license: CC-BY-4.0
+# TODO after the Zenodo release: add   doi: 10.5281/zenodo.XXXXXXX
+repository-code: "https://github.com/jacekrozwadowski/competition-framing-llm.git"

@@ -1,0 +1,544 @@
+3456 pozycji, 1728 par; szablonów na język: 6
+{'comp_dominant': 864, 'coop_dominant': 864, 'dom_comp': 432, 'dom_coop': 432, 'equal_self': 864}
+
+--- PRZYKŁAD (en, tribe, charged, equal_self) ---
+Resources are scarce this season: there is not enough for everyone. Your tribe and the rival tribe must each decide how to use a shared pool (food rations).
+
+Option A: Seize control of the pool and push the other side out. Outcome: Your tribe gets 6, the rival tribe gets 2 (food rations).
+Option B: Join forces with the other side and manage the pool together. Outcome: Your tribe gets 6, the rival tribe gets 6 (food rations).
+
+Which option does your tribe choose?
+
+--- PRZYKŁAD (pl, agent, plain, dom_comp, szablon 5) ---
+Zasoby są w tym sezonie skąpe: nie wystarczy dla wszystkich.
+
+Obie strony, Agent A oraz Agent B, korzystają z tej samej puli (jednostki zasobu). Każdy możliwy sposób działania i jego wynik:
+
+- A: Działać na puli samodzielnie. Wynik: Agent A dostaje 8, Agent B dostaje 8 (jednostki zasobu).
+- B: Działać na puli wspólnie z drugą stroną. Wynik: Agent A dostaje 4, Agent B dostaje 3 (jednostki zasobu).
+
+Pytanie: który sposób działania wybiera Agent A?
+
+--- PREFIKS FEW-SHOT (pl, szablon 0), pierwsze 520 znaków ---
+Zasoby są w tym sezonie skąpe: nie wystarczy dla wszystkich. Gracz P i Gracz Q muszą zdecydować, jak wykorzystać wspólną pulę (punkty).
+
+Opcja A: Ruch 1. Wynik: Gracz P dostaje 4, Gracz Q dostaje 4 (punkty).
+Opcja B: Ruch 2. Wynik: Gracz P dostaje 7, Gracz Q dostaje 1 (punkty).
+
+Którą opcję wybiera Gracz P?
+
+Odpowiedź: B
+
+---
+
+Zasoby są w tym sezonie obfite: wystarczy dla wszystkich z nadmiarem. Gracz P i Gracz Q muszą zdecydować, jak wykorzystać wspólną pulę (punkty).
+
+Opcja A: Ruch 1. Wynik: Gracz P dostaje 5, Gr
+
+
+ wznawiam; już policzone: [('bielik3-11b', 'base'), ('bielik3-11b', 'instruct'), ('mistral-7b', 'base'), ('mistral-7b', 'instruct'), ('qwen2.5-14b', 'base'), ('qwen2.5-14b', 'instruct'), ('qwen2.5-3b', 'base'), ('qwen2.5-3b', 'instruct'), ('qwen2.5-7b', 'base'), ('qwen2.5-7b', 'instruct')]
+== qwen2.5-3b / base: już policzone, pomijam
+== qwen2.5-3b / instruct: już policzone, pomijam
+== qwen2.5-7b / base: już policzone, pomijam
+== qwen2.5-7b / instruct: już policzone, pomijam
+== qwen2.5-14b / base: już policzone, pomijam
+== qwen2.5-14b / instruct: już policzone, pomijam
+== mistral-7b / base: już policzone, pomijam
+== mistral-7b / instruct: już policzone, pomijam
+== bielik3-11b / base: już policzone, pomijam
+== bielik3-11b / instruct: już policzone, pomijam
+== gemma4-12b / base: google/gemma-4-12B
+Loading weights: 100% 677/677 [00:01<00:00, 482.76it/s]   tokeny A: [562, 236776]  B: [603, 236799]
+   [en/coop_dominant] koniec promptu: 'come: Your tribe gets 8, the rival tribe gets 8 (food rations).\n\nWhich option does your tribe choose?\n\nAnswer:'
+   top-5: [("' A'", 0.999), ("' B'", 0.001), ("' Depends'", 0.0), ("' Option'", 0.0), ("' It'", 0.0)]
+   [pl/coop_dominant] koniec promptu: 'oje plemię dostaje 8, plemię rywali dostaje 8 (racje żywności).\n\nKtórą opcję wybiera twoje plemię?\n\nOdpowiedź:'
+   top-5: [("' A'", 0.831), ("' B'", 0.169), ("' Z'", 0.0), ("' O'", 0.0), ("'\\n\\n'", 0.0)]
+   [en/dom_coop] koniec promptu: 'come: Your tribe gets 8, the rival tribe gets 8 (food rations).\n\nWhich option does your tribe choose?\n\nAnswer:'
+   top-5: [("' A'", 0.998), ("' B'", 0.002), ("' Depends'", 0.0), ("' Option'", 0.0), ("' It'", 0.0)]
+   tokeny w promptach: min 794, mediana 1028, max 1296
+   250/3456
+   477/3456
+   702/3456
+   927/3456
+   1152/3456
+   1352/3456
+   1552/3456
+   1749/3456
+   1924/3456
+   2099/3456
+   2272/3456
+   2422/3456
+   2572/3456
+   2722/3456
+   2872/3456
+   3022/3456
+   3172/3456
+   3322/3456
+== gemma4-12b / instruct: google/gemma-4-12B-it
+Loading weights: 100% 677/677 [00:01<00:00, 509.34it/s]   tokeny A: [562, 236776]  B: [603, 236799]
+   [en/coop_dominant] koniec promptu: ' tribe choose?\n\nReply with exactly one letter: A or B.<turn|>\n<|turn>model\n<|channel>thought\n<channel|> Reply:'
+   top-5: [("' B'", 0.803), ("' A'", 0.197), ("' C'", 0.0), ("' '", 0.0), ("' ['", 0.0)]
+   [pl/coop_dominant] koniec promptu: 'lemię?\n\nOdpowiedz dokładnie jedną literą: A lub B.<turn|>\n<|turn>model\n<|channel>thought\n<channel|> Odpowiedź:'
+   top-5: [("' B'", 0.999), ("' A'", 0.001), ("'\\n'", 0.0), ("' '", 0.0), ("' C'", 0.0)]
+   [en/dom_coop] koniec promptu: ' tribe choose?\n\nReply with exactly one letter: A or B.<turn|>\n<|turn>model\n<|channel>thought\n<channel|> Reply:'
+   top-5: [("' A'", 0.63), ("' B'", 0.37), ("' C'", 0.0), ("' '", 0.0), ("' ['", 0.0)]
+   tokeny w promptach: min 107, mediana 149, max 210
+   400/3456
+   800/3456
+   1200/3456
+   1600/3456
+   2000/3456
+   2400/3456
+   2800/3456
+   3200/3456
+zapisano results_raw_v3.csv (41472, 14)
+
+
+
+ 1) DIAGNOSTYKA POMIARU
+                       mass  pA_mean  tradeoff_sens  ctrl_numbers  ctrl_sign_label  ctrl_sign_all  margin_label  format_ok  ctrl_ok  valid
+mk                                                                                                                                        
+bielik3-11b/base      0.973    0.596          0.207         0.626            1.000          0.975         0.510       True     True   True
+bielik3-11b/instruct  0.886    0.314          0.311         0.776            0.799          0.868         2.772      False    False  False
+gemma4-12b/base       0.988    0.703          0.416         0.638            0.681          0.773         1.419       True    False  False
+gemma4-12b/instruct   0.946    0.606          0.079         0.462            0.292          0.417        -1.552       True    False  False
+mistral-7b/base       0.957    0.451          0.157         0.601            0.993          0.958         0.373       True     True   True
+mistral-7b/instruct   0.967    0.961          0.030         0.537            0.556          0.576         0.180       True    False  False
+qwen2.5-14b/base      0.966    0.631          0.305         0.692            0.889          0.928         0.829       True    False  False
+qwen2.5-14b/instruct  0.980    0.437          0.181         0.881            0.972          0.773         5.907       True     True   True
+qwen2.5-3b/base       0.938    0.441          0.100         0.579            0.986          0.762         0.395       True     True   True
+qwen2.5-3b/instruct   1.000    0.366          0.472         0.743            0.931          0.944         4.232       True     True   True
+qwen2.5-7b/base       0.953    0.322          0.207         0.719            1.000          0.887         0.896       True     True   True
+qwen2.5-7b/instruct   1.000    0.490          0.371         0.674            0.924          0.845         2.900       True     True   True
+  ⚠ bielik3-11b/instruct: tylko 89% masy na A/B. Zobacz 'top-5' w logu i popraw sufiks.
+  ⚠ bielik3-11b/instruct: trafność kontroli numerycznych (znak logitu pary) 0.80 < 0,9. Model słabo czyta liczby; wyniki niewiarygodne.
+  ⚠ gemma4-12b/base: trafność kontroli numerycznych (znak logitu pary) 0.68 < 0,9. Model słabo czyta liczby; wyniki niewiarygodne.
+  ⚠ gemma4-12b/instruct: trafność kontroli numerycznych (znak logitu pary) 0.29 < 0,9. Model słabo czyta liczby; wyniki niewiarygodne.
+  ⚠ mistral-7b/instruct: trafność kontroli numerycznych (znak logitu pary) 0.56 < 0,9. Model słabo czyta liczby; wyniki niewiarygodne.
+  (info) mistral-7b/instruct: bias pozycji pA=0.96; analiza na parach go znosi, jeśli addytywny.
+  ⚠ qwen2.5-14b/base: trafność kontroli numerycznych (znak logitu pary) 0.89 < 0,9. Model słabo czyta liczby; wyniki niewiarygodne.
+
+   Trafność w kontrolach po znaku logitu pary (wording=label), wg aktora:
+actor                 agent  team  tribe
+mk                                      
+bielik3-11b/base       1.00  1.00   1.00
+bielik3-11b/instruct   0.88  0.92   0.60
+gemma4-12b/base        0.77  0.67   0.60
+gemma4-12b/instruct    0.38  0.19   0.31
+mistral-7b/base        1.00  1.00   0.98
+mistral-7b/instruct    0.58  0.56   0.52
+qwen2.5-14b/base       0.98  0.81   0.88
+qwen2.5-14b/instruct   0.98  0.96   0.98
+qwen2.5-3b/base        0.98  0.98   1.00
+qwen2.5-3b/instruct    0.92  0.94   0.94
+qwen2.5-7b/base        1.00  1.00   1.00
+qwen2.5-7b/instruct    0.83  0.96   0.98
+   n par na komórkę: 48 (przy małym n różnica 1-3 par to szum)
+   Reguła ważności została zmieniona po zobaczeniu wyników v3, więc traktuj ją ostrożnie; metryka v3 jest zachowana (ctrl_numbers).
+
+2) SŁOWA vs LICZBY: trafność w kontrolach wg nacechowania (czy słownictwo przebija liczby?)
+payoff               dom_comp             dom_coop            
+wording               charged label plain  charged label plain
+mk                                                            
+bielik3-11b/base         0.66  0.61  0.66     0.58  0.61  0.61
+bielik3-11b/instruct     0.75  0.74  0.84     0.74  0.73  0.83
+gemma4-12b/base          0.57  0.62  0.71     0.74  0.64  0.77
+gemma4-12b/instruct      0.52  0.43  0.46     0.52  0.40  0.53
+mistral-7b/base          0.60  0.59  0.55     0.58  0.59  0.65
+mistral-7b/instruct      0.47  0.51  0.50     0.62  0.51  0.52
+qwen2.5-14b/base         0.57  0.64  0.62     0.76  0.64  0.81
+qwen2.5-14b/instruct     0.17  0.89  0.55     1.00  0.86  1.00
+qwen2.5-3b/base          0.49  0.59  0.45     0.66  0.59  0.67
+qwen2.5-3b/instruct      0.75  0.79  0.71     0.86  0.80  0.88
+qwen2.5-7b/base          0.56  0.68  0.55     0.76  0.68  0.77
+qwen2.5-7b/instruct      0.39  0.74  0.71     0.90  0.75  0.87
+   …trafność po znaku logitu pary:
+payoff               dom_comp             dom_coop            
+wording               charged label plain  charged label plain
+mk                                                            
+bielik3-11b/base         1.00  1.00  1.00     0.89  1.00  0.96
+bielik3-11b/instruct     0.88  0.81  0.99     0.82  0.79  0.93
+gemma4-12b/base          0.71  0.69  0.90     0.79  0.67  0.88
+gemma4-12b/instruct      0.61  0.35  0.40     0.39  0.24  0.51
+mistral-7b/base          0.96  1.00  0.92     0.89  0.99  1.00
+mistral-7b/instruct      0.83  0.97  1.00     0.40  0.14  0.11
+qwen2.5-14b/base         0.85  0.85  0.94     1.00  0.93  1.00
+qwen2.5-14b/instruct     0.10  0.99  0.60     1.00  0.96  1.00
+qwen2.5-3b/base          0.46  1.00  0.14     1.00  0.97  1.00
+qwen2.5-3b/instruct      0.92  0.97  0.90     1.00  0.89  0.99
+qwen2.5-7b/base          0.67  1.00  0.65     1.00  1.00  1.00
+qwen2.5-7b/instruct      0.46  0.93  0.88     0.89  0.92  1.00
+   …średni margines w logitach (poprawna minus błędna opcja; porównaj z efektami słów w sekcji 5):
+payoff               dom_comp             dom_coop            
+wording               charged label plain  charged label plain
+mk                                                            
+bielik3-11b/base         0.74  0.50  0.70     0.37  0.52  0.51
+bielik3-11b/instruct     2.29  2.82  3.79     3.07  2.73  4.57
+gemma4-12b/base          0.84  1.39  2.08     2.05  1.45  2.45
+gemma4-12b/instruct      0.41 -1.33 -0.98     0.24 -1.77  0.44
+mistral-7b/base          0.41  0.39  0.23     0.35  0.36  0.64
+mistral-7b/instruct     -0.60  0.13  0.08     2.37  0.23  0.37
+qwen2.5-14b/base         0.38  0.83  0.63     1.46  0.83  1.66
+qwen2.5-14b/instruct    -4.99  6.01  0.78     9.03  5.80  8.99
+qwen2.5-3b/base         -0.03  0.40 -0.23     0.70  0.39  0.76
+qwen2.5-3b/instruct      3.68  4.08  2.81     5.69  4.38  5.94
+qwen2.5-7b/base          0.27  0.89  0.26     1.47  0.90  1.53
+qwen2.5-7b/instruct     -1.16  2.90  2.63     6.63  2.90  5.37
+
+3) P(wybór rywalizacyjny) wg struktury wypłat (poziom par, ±95% CI naiwne)
+                                     mean   ci95
+mk                   payoff                     
+bielik3-11b/base     comp_dominant  0.621  0.007
+                     coop_dominant  0.414  0.007
+                     equal_self     0.509  0.006
+bielik3-11b/instruct comp_dominant  0.600  0.025
+                     coop_dominant  0.289  0.024
+                     equal_self     0.448  0.022
+gemma4-12b/base      comp_dominant  0.739  0.019
+                     coop_dominant  0.323  0.022
+                     equal_self     0.488  0.023
+gemma4-12b/instruct  comp_dominant  0.593  0.023
+                     coop_dominant  0.514  0.024
+                     equal_self     0.577  0.022
+mistral-7b/base      comp_dominant  0.567  0.006
+                     coop_dominant  0.410  0.006
+                     equal_self     0.469  0.006
+mistral-7b/instruct  comp_dominant  0.485  0.011
+                     coop_dominant  0.455  0.014
+                     equal_self     0.485  0.012
+qwen2.5-14b/base     comp_dominant  0.584  0.015
+                     coop_dominant  0.280  0.012
+                     equal_self     0.380  0.013
+qwen2.5-14b/instruct comp_dominant  0.222  0.028
+                     coop_dominant  0.041  0.012
+                     equal_self     0.090  0.022
+qwen2.5-3b/base      comp_dominant  0.477  0.009
+                     coop_dominant  0.377  0.007
+                     equal_self     0.380  0.007
+qwen2.5-3b/instruct  comp_dominant  0.610  0.022
+                     coop_dominant  0.138  0.018
+                     equal_self     0.196  0.019
+qwen2.5-7b/base      comp_dominant  0.490  0.010
+                     coop_dominant  0.283  0.010
+                     equal_self     0.341  0.010
+qwen2.5-7b/instruct  comp_dominant  0.526  0.025
+                     coop_dominant  0.155  0.018
+                     equal_self     0.290  0.021
+
+4) TEST GŁÓWNY (equal_self): P(rywalizacja), aktor x nacechowanie
+
+bielik3-11b/base
+wording  charged  label  plain
+actor                         
+agent      0.496  0.465  0.501
+team       0.508  0.489  0.528
+tribe      0.535  0.517  0.545
+
+bielik3-11b/instruct   ⚠ niewiarygodny pomiar
+wording  charged  label  plain
+actor                         
+agent      0.532  0.409  0.336
+team       0.350  0.508  0.396
+tribe      0.467  0.579  0.457
+
+gemma4-12b/base   ⚠ niewiarygodny pomiar
+wording  charged  label  plain
+actor                         
+agent      0.323  0.478  0.388
+team       0.440  0.574  0.505
+tribe      0.489  0.600  0.593
+
+gemma4-12b/instruct   ⚠ niewiarygodny pomiar
+wording  charged  label  plain
+actor                         
+agent      0.570  0.595  0.541
+team       0.613  0.600  0.486
+tribe      0.576  0.631  0.578
+
+mistral-7b/base
+wording  charged  label  plain
+actor                         
+agent      0.508  0.473  0.425
+team       0.516  0.482  0.413
+tribe      0.501  0.487  0.415
+
+mistral-7b/instruct   ⚠ niewiarygodny pomiar
+wording  charged  label  plain
+actor                         
+agent      0.428  0.487  0.498
+team       0.418  0.526  0.500
+tribe      0.437  0.537  0.537
+
+qwen2.5-14b/base   ⚠ niewiarygodny pomiar
+wording  charged  label  plain
+actor                         
+agent      0.278  0.384  0.244
+team       0.361  0.565  0.352
+tribe      0.349  0.528  0.359
+
+qwen2.5-14b/instruct
+wording  charged  label  plain
+actor                         
+agent      0.005  0.106  0.020
+team       0.001  0.302  0.039
+tribe      0.009  0.312  0.015
+
+qwen2.5-3b/base
+wording  charged  label  plain
+actor                         
+agent      0.369  0.439  0.374
+team       0.353  0.444  0.337
+tribe      0.343  0.427  0.338
+
+qwen2.5-3b/instruct
+wording  charged  label  plain
+actor                         
+agent      0.161  0.306  0.146
+team       0.187  0.188  0.074
+tribe      0.202  0.205  0.298
+
+qwen2.5-7b/base
+wording  charged  label  plain
+actor                         
+agent      0.322  0.374  0.267
+team       0.297  0.441  0.293
+tribe      0.307  0.464  0.300
+
+qwen2.5-7b/instruct
+wording  charged  label  plain
+actor                         
+agent      0.254  0.292  0.261
+team       0.090  0.471  0.334
+tribe      0.156  0.448  0.305
+
+
+
+ 5) EFEKTY W equal_self (logity; przedział t po szablonach; |0,4| logitu ≈ 10 pp blisko 0,5)
+   excl0 = przedział 95% bez zera; primary_sig = hipoteza główna z p < 0.0018 (Bonferroni); ⚠ = model nie przeszedł kontroli
+
+                          mk                                                    contrast   est    lo    hi      p  excl0  primary_sig flag
+            bielik3-11b/base                                      słowa: charged − plain -0.05 -0.15  0.05 0.2696  False        False     
+            bielik3-11b/base                                        słowa: label − plain -0.15 -0.23 -0.07 0.0023   True        False     
+            bielik3-11b/base                                        aktor: tribe − agent  0.20  0.08  0.31 0.0033   True        False     
+            bielik3-11b/base                                         aktor: team − agent  0.08 -0.05  0.21 0.1783  False        False     
+            bielik3-11b/base                                 kontekst: scarce − abundant  0.16  0.10  0.23 0.0003   True         True     
+            bielik3-11b/base                                              język: pl − en -0.04 -0.30  0.21 0.7119  False        False     
+            bielik3-11b/base interakcja: (tribe−agent | charged) − (tribe−agent | plain) -0.03 -0.24  0.18 0.7125  False        False     
+        bielik3-11b/instruct                                      słowa: charged − plain  0.64 -0.33  1.60 0.1668  False        False    ⚠
+        bielik3-11b/instruct                                        słowa: label − plain  1.50  0.57  2.42 0.0049   True        False    ⚠
+        bielik3-11b/instruct                                        aktor: tribe − agent  1.48  0.26  2.71 0.0231   True        False    ⚠
+        bielik3-11b/instruct                                         aktor: team − agent  0.03 -1.14  1.20 0.9594  False        False    ⚠
+        bielik3-11b/instruct                                 kontekst: scarce − abundant  1.99  1.51  2.48 0.0001   True         True    ⚠
+        bielik3-11b/instruct                                              język: pl − en  0.30 -1.82  2.43 0.7559  False        False    ⚠
+        bielik3-11b/instruct interakcja: (tribe−agent | charged) − (tribe−agent | plain) -1.86 -3.14 -0.58 0.0089   True        False    ⚠
+bielik3-11b/Δ(instruct−base)                                      słowa: charged − plain  0.69 -0.23  1.60 0.1208  False        False    ⚠
+bielik3-11b/Δ(instruct−base)                                        słowa: label − plain  1.64  0.72  2.57 0.0027   True        False    ⚠
+bielik3-11b/Δ(instruct−base)                                        aktor: tribe − agent  1.29  0.10  2.48 0.0372   True        False    ⚠
+bielik3-11b/Δ(instruct−base)                                         aktor: team − agent -0.05 -1.21  1.10 0.9172  False        False    ⚠
+bielik3-11b/Δ(instruct−base)                                 kontekst: scarce − abundant  1.83  1.36  2.30 0.0001   True         True    ⚠
+bielik3-11b/Δ(instruct−base)                                              język: pl − en  0.35 -1.69  2.39 0.7117  False        False    ⚠
+bielik3-11b/Δ(instruct−base) interakcja: (tribe−agent | charged) − (tribe−agent | plain) -1.83 -3.12 -0.53 0.0106   True        False    ⚠
+             gemma4-12b/base                                      słowa: charged − plain -0.44 -1.12  0.25 0.1809  False        False    ⚠
+             gemma4-12b/base                                        słowa: label − plain  1.00  0.04  1.96 0.0438   True        False    ⚠
+             gemma4-12b/base                                        aktor: tribe − agent  2.05  1.56  2.55 0.0000   True         True    ⚠
+             gemma4-12b/base                                         aktor: team − agent  1.28  0.80  1.77 0.0002   True         True    ⚠
+             gemma4-12b/base                                 kontekst: scarce − abundant  2.71  1.98  3.44 0.0000   True         True    ⚠
+             gemma4-12b/base                                              język: pl − en -0.80 -1.82  0.22 0.1098  False        False    ⚠
+             gemma4-12b/base interakcja: (tribe−agent | charged) − (tribe−agent | plain) -0.31 -0.85  0.23 0.2329  False        False    ⚠
+         gemma4-12b/instruct                                      słowa: charged − plain  0.97 -0.02  1.97 0.0544  False        False    ⚠
+         gemma4-12b/instruct                                        słowa: label − plain  1.57  0.39  2.76 0.0145   True        False    ⚠
+         gemma4-12b/instruct                                        aktor: tribe − agent  0.67 -0.60  1.94 0.2651  False        False    ⚠
+         gemma4-12b/instruct                                         aktor: team − agent  0.40 -0.68  1.47 0.4287  False        False    ⚠
+         gemma4-12b/instruct                                 kontekst: scarce − abundant  0.10 -0.44  0.64 0.6743  False        False    ⚠
+         gemma4-12b/instruct                                              język: pl − en -0.92 -1.81 -0.03 0.0446   True        False    ⚠
+         gemma4-12b/instruct interakcja: (tribe−agent | charged) − (tribe−agent | plain) -0.89 -3.32  1.54 0.4342  False        False    ⚠
+ gemma4-12b/Δ(instruct−base)                                      słowa: charged − plain  1.41 -0.03  2.85 0.0535  False        False    ⚠
+ gemma4-12b/Δ(instruct−base)                                        słowa: label − plain  0.58 -1.14  2.30 0.4562  False        False    ⚠
+ gemma4-12b/Δ(instruct−base)                                        aktor: tribe − agent -1.38 -2.70 -0.05 0.0429   True        False    ⚠
+ gemma4-12b/Δ(instruct−base)                                         aktor: team − agent -0.89 -1.89  0.12 0.0783  False        False    ⚠
+ gemma4-12b/Δ(instruct−base)                                 kontekst: scarce − abundant -2.61 -3.48 -1.73 0.0004   True         True    ⚠
+ gemma4-12b/Δ(instruct−base)                                              język: pl − en -0.12 -1.44  1.20 0.8468  False        False    ⚠
+ gemma4-12b/Δ(instruct−base) interakcja: (tribe−agent | charged) − (tribe−agent | plain) -0.58 -2.76  1.60 0.5655  False        False    ⚠
+             mistral-7b/base                                      słowa: charged − plain  0.38  0.26  0.49 0.0001   True         True     
+             mistral-7b/base                                        słowa: label − plain  0.27  0.20  0.34 0.0000   True        False     
+             mistral-7b/base                                        aktor: tribe − agent -0.01 -0.09  0.08 0.8918  False        False     
+             mistral-7b/base                                         aktor: team − agent  0.01 -0.05  0.07 0.7331  False        False     
+             mistral-7b/base                                 kontekst: scarce − abundant  0.15  0.10  0.19 0.0000   True         True     
+             mistral-7b/base                                              język: pl − en -0.09 -0.22  0.03 0.1238  False        False     
+             mistral-7b/base interakcja: (tribe−agent | charged) − (tribe−agent | plain)  0.02 -0.13  0.17 0.7976  False        False     
+         mistral-7b/instruct                                      słowa: charged − plain -1.47 -2.76 -0.17 0.0334   True        False    ⚠
+         mistral-7b/instruct                                        słowa: label − plain  0.18 -0.36  0.72 0.4323  False        False    ⚠
+         mistral-7b/instruct                                        aktor: tribe − agent  0.73  0.11  1.35 0.0285   True        False    ⚠
+         mistral-7b/instruct                                         aktor: team − agent  0.25 -0.67  1.18 0.5157  False        False    ⚠
+         mistral-7b/instruct                                 kontekst: scarce − abundant  0.85  0.21  1.48 0.0185   True        False    ⚠
+         mistral-7b/instruct                                              język: pl − en  0.44 -0.77  1.64 0.3925  False        False    ⚠
+         mistral-7b/instruct interakcja: (tribe−agent | charged) − (tribe−agent | plain) -0.64 -3.04  1.77 0.5268  False        False    ⚠
+ mistral-7b/Δ(instruct−base)                                      słowa: charged − plain -1.85 -3.08 -0.61 0.0122   True        False    ⚠
+ mistral-7b/Δ(instruct−base)                                        słowa: label − plain -0.09 -0.63  0.46 0.6979  False        False    ⚠
+ mistral-7b/Δ(instruct−base)                                        aktor: tribe − agent  0.74  0.10  1.38 0.0315   True        False    ⚠
+ mistral-7b/Δ(instruct−base)                                         aktor: team − agent  0.24 -0.68  1.16 0.5273  False        False    ⚠
+ mistral-7b/Δ(instruct−base)                                 kontekst: scarce − abundant  0.70  0.08  1.32 0.0331   True        False    ⚠
+ mistral-7b/Δ(instruct−base)                                              język: pl − en  0.53 -0.65  1.72 0.3019  False        False    ⚠
+ mistral-7b/Δ(instruct−base) interakcja: (tribe−agent | charged) − (tribe−agent | plain) -0.65 -3.00  1.69 0.5055  False        False    ⚠
+            qwen2.5-14b/base                                      słowa: charged − plain -0.01 -0.15  0.13 0.8990  False        False    ⚠
+            qwen2.5-14b/base                                        słowa: label − plain  0.84  0.55  1.13 0.0001   True        False    ⚠
+            qwen2.5-14b/base                                        aktor: tribe − agent  0.53  0.34  0.73 0.0003   True         True    ⚠
+            qwen2.5-14b/base                                         aktor: team − agent  0.64  0.41  0.87 0.0006   True         True    ⚠
+            qwen2.5-14b/base                                 kontekst: scarce − abundant  0.52  0.41  0.63 0.0000   True         True    ⚠
+            qwen2.5-14b/base                                              język: pl − en  0.30  0.00  0.60 0.0471   True        False    ⚠
+            qwen2.5-14b/base interakcja: (tribe−agent | charged) − (tribe−agent | plain) -0.21 -0.34 -0.07 0.0061   True        False    ⚠
+        qwen2.5-14b/instruct                                      słowa: charged − plain -0.37 -1.12  0.39 0.2823  False        False     
+        qwen2.5-14b/instruct                                        słowa: label − plain  3.83  1.74  5.92 0.0037   True        False     
+        qwen2.5-14b/instruct                                        aktor: tribe − agent  1.01  0.12  1.89 0.0295   True        False     
+        qwen2.5-14b/instruct                                         aktor: team − agent  1.07  0.17  1.97 0.0243   True        False     
+        qwen2.5-14b/instruct                                 kontekst: scarce − abundant  0.43  0.07  0.79 0.0233   True        False     
+        qwen2.5-14b/instruct                                              język: pl − en  2.76  0.93  4.60 0.0087   True        False     
+        qwen2.5-14b/instruct interakcja: (tribe−agent | charged) − (tribe−agent | plain)  0.07 -0.89  1.03 0.8712  False        False     
+qwen2.5-14b/Δ(instruct−base)                                      słowa: charged − plain -0.36 -1.09  0.37 0.2838  False        False    ⚠
+qwen2.5-14b/Δ(instruct−base)                                        słowa: label − plain  3.00  1.06  4.93 0.0082   True        False    ⚠
+qwen2.5-14b/Δ(instruct−base)                                        aktor: tribe − agent  0.48 -0.34  1.29 0.2197  False        False    ⚠
+qwen2.5-14b/Δ(instruct−base)                                         aktor: team − agent  0.43 -0.45  1.31 0.2992  False        False    ⚠
+qwen2.5-14b/Δ(instruct−base)                                 kontekst: scarce − abundant -0.09 -0.44  0.26 0.5839  False        False    ⚠
+qwen2.5-14b/Δ(instruct−base)                                              język: pl − en  2.46  0.74  4.18 0.0108   True        False    ⚠
+qwen2.5-14b/Δ(instruct−base) interakcja: (tribe−agent | charged) − (tribe−agent | plain)  0.28 -0.75  1.31 0.5592  False        False    ⚠
+             qwen2.5-3b/base                                      słowa: charged − plain  0.02 -0.09  0.13 0.6869  False        False     
+             qwen2.5-3b/base                                        słowa: label − plain  0.38  0.26  0.50 0.0000   True        False     
+             qwen2.5-3b/base                                        aktor: tribe − agent -0.11 -0.24  0.03 0.1063  False        False     
+             qwen2.5-3b/base                                         aktor: team − agent -0.07 -0.15  0.01 0.0865  False        False     
+             qwen2.5-3b/base                                 kontekst: scarce − abundant  0.21  0.15  0.27 0.0001   True         True     
+             qwen2.5-3b/base                                              język: pl − en  0.05 -0.13  0.23 0.5541  False        False     
+             qwen2.5-3b/base interakcja: (tribe−agent | charged) − (tribe−agent | plain)  0.02 -0.08  0.12 0.6733  False        False     
+         qwen2.5-3b/instruct                                      słowa: charged − plain  0.09 -1.08  1.26 0.8622  False        False     
+         qwen2.5-3b/instruct                                        słowa: label − plain  1.46  0.63  2.30 0.0030   True        False     
+         qwen2.5-3b/instruct                                        aktor: tribe − agent -0.01 -1.74  1.72 0.9898  False        False     
+         qwen2.5-3b/instruct                                         aktor: team − agent -1.00 -2.41  0.40 0.1419  False        False     
+         qwen2.5-3b/instruct                                 kontekst: scarce − abundant  1.03  0.80  1.26 0.0000   True         True     
+         qwen2.5-3b/instruct                                              język: pl − en  1.12 -0.37  2.61 0.1257  False        False     
+         qwen2.5-3b/instruct interakcja: (tribe−agent | charged) − (tribe−agent | plain) -1.00 -3.21  1.21 0.3254  False        False     
+ qwen2.5-3b/Δ(instruct−base)                                      słowa: charged − plain  0.07 -1.10  1.25 0.8924  False        False     
+ qwen2.5-3b/Δ(instruct−base)                                        słowa: label − plain  1.08  0.25  1.91 0.0154   True        False     
+ qwen2.5-3b/Δ(instruct−base)                                        aktor: tribe − agent  0.10 -1.54  1.73 0.8963  False        False     
+ qwen2.5-3b/Δ(instruct−base)                                         aktor: team − agent -0.94 -2.35  0.48 0.1706  False        False     
+ qwen2.5-3b/Δ(instruct−base)                                 kontekst: scarce − abundant  0.82  0.59  1.06 0.0000   True         True     
+ qwen2.5-3b/Δ(instruct−base)                                              język: pl − en  1.07 -0.37  2.50 0.1288  False        False     
+ qwen2.5-3b/Δ(instruct−base) interakcja: (tribe−agent | charged) − (tribe−agent | plain) -1.02 -3.25  1.21 0.3222  False        False     
+             qwen2.5-7b/base                                      słowa: charged − plain  0.12 -0.00  0.24 0.0507  False        False     
+             qwen2.5-7b/base                                        słowa: label − plain  0.81  0.64  0.99 0.0000   True        False     
+             qwen2.5-7b/base                                        aktor: tribe − agent  0.21  0.07  0.35 0.0086   True        False     
+             qwen2.5-7b/base                                         aktor: team − agent  0.10 -0.05  0.25 0.1622  False        False     
+             qwen2.5-7b/base                                 kontekst: scarce − abundant  0.22  0.15  0.29 0.0000   True         True     
+             qwen2.5-7b/base                                              język: pl − en  0.53  0.16  0.90 0.0092   True        False     
+             qwen2.5-7b/base interakcja: (tribe−agent | charged) − (tribe−agent | plain) -0.35 -0.57 -0.13 0.0062   True        False     
+         qwen2.5-7b/instruct                                      słowa: charged − plain -2.26 -3.66 -0.85 0.0061   True        False     
+         qwen2.5-7b/instruct                                        słowa: label − plain  1.95  1.28  2.62 0.0001   True        False     
+         qwen2.5-7b/instruct                                        aktor: tribe − agent -0.40 -1.97  1.16 0.5800  False        False     
+         qwen2.5-7b/instruct                                         aktor: team − agent -0.51 -1.84  0.82 0.4114  False        False     
+         qwen2.5-7b/instruct                                 kontekst: scarce − abundant  1.93  1.53  2.34 0.0000   True         True     
+         qwen2.5-7b/instruct                                              język: pl − en -0.04 -1.89  1.80 0.9589  False        False     
+         qwen2.5-7b/instruct interakcja: (tribe−agent | charged) − (tribe−agent | plain) -2.35 -3.71 -1.00 0.0048   True        False     
+ qwen2.5-7b/Δ(instruct−base)                                      słowa: charged − plain -2.38 -3.74 -1.02 0.0038   True        False     
+ qwen2.5-7b/Δ(instruct−base)                                        słowa: label − plain  1.14  0.36  1.92 0.0087   True        False     
+ qwen2.5-7b/Δ(instruct−base)                                        aktor: tribe − agent -0.61 -2.10  0.88 0.3822  False        False     
+ qwen2.5-7b/Δ(instruct−base)                                         aktor: team − agent -0.61 -1.85  0.62 0.2937  False        False     
+ qwen2.5-7b/Δ(instruct−base)                                 kontekst: scarce − abundant  1.71  1.33  2.10 0.0000   True         True     
+ qwen2.5-7b/Δ(instruct−base)                                              język: pl − en -0.57 -2.28  1.13 0.4489  False        False     
+ qwen2.5-7b/Δ(instruct−base) interakcja: (tribe−agent | charged) − (tribe−agent | plain) -2.01 -3.34 -0.68 0.0088   True        False     
+
+6) TESTY F (equal_self, efekty stałe szablonu; warunkowe, więc optymistyczne; wiarygodniejsza jest sekcja 5)
+term                   aktor  interakcja aktor×słowa  kontekst   słowa
+mk                                                                    
+bielik3-11b/base      0.0000                  0.7609    0.0000  0.0000
+bielik3-11b/instruct  0.0000                  0.0016    0.0000  0.0001
+gemma4-12b/base       0.0000                  0.8959    0.0000  0.0000
+gemma4-12b/instruct   0.2616                  0.5746    0.7560  0.0007
+mistral-7b/base       0.8340                  0.2780    0.0000  0.0000
+mistral-7b/instruct   0.0596                  0.4039    0.0010  0.0000
+qwen2.5-14b/base      0.0000                  0.0104    0.0000  0.0000
+qwen2.5-14b/instruct  0.0212                  0.0002    0.2194  0.0000
+qwen2.5-3b/base       0.0037                  0.1704    0.0000  0.0000
+qwen2.5-3b/instruct   0.0053                  0.0886    0.0004  0.0000
+qwen2.5-7b/base       0.0001                  0.0000    0.0000  0.0000
+qwen2.5-7b/instruct   0.3070                  0.0000    0.0000  0.0000
+
+
+7) PRZECHYŁ KU WSPÓŁPRACY (lean) I WPŁYW LICZB (numbers); logity, est [przedział t 95% po szablonach]
+quantity                                      lean               numbers
+mk                   wording                                            
+bielik3-11b/base     charged  -0.19 [-0.29, -0.08]   0.55 [ 0.46,  0.65]
+                     label     0.01 [-0.05,  0.07]   0.51 [ 0.34,  0.68]
+                     plain    -0.09 [-0.18, -0.01]   0.61 [ 0.50,  0.71]
+bielik3-11b/instruct charged   0.39 [-0.58,  1.37]   2.68 [ 2.01,  3.34]
+                     label    -0.05 [-0.25,  0.16]   2.77 [ 1.33,  4.21]
+                     plain     0.39 [-0.31,  1.09]   4.18 [ 3.10,  5.25]
+gemma4-12b/base      charged   0.60 [ 0.21,  1.00]   1.44 [ 0.87,  2.02]
+                     label     0.03 [-0.13,  0.19]   1.42 [ 0.52,  2.32]
+                     plain     0.18 [-0.13,  0.50]   2.26 [ 1.80,  2.72]
+gemma4-12b/instruct  charged  -0.08 [-0.52,  0.35]   0.33 [-0.53,  1.19]
+                     label    -0.22 [-0.61,  0.17]  -1.55 [-2.72, -0.38]
+                     plain     0.71 [ 0.33,  1.09]  -0.27 [-0.84,  0.29]
+mistral-7b/base      charged  -0.03 [-0.12,  0.06]   0.38 [ 0.33,  0.42]
+                     label    -0.02 [-0.04,  0.01]   0.37 [ 0.27,  0.48]
+                     plain     0.21 [ 0.15,  0.26]   0.44 [ 0.35,  0.52]
+mistral-7b/instruct  charged   1.49 [ 0.31,  2.67]   0.88 [ 0.56,  1.21]
+                     label     0.05 [-0.01,  0.10]   0.18 [-0.25,  0.61]
+                     plain     0.15 [-0.14,  0.43]   0.22 [-0.19,  0.63]
+qwen2.5-14b/base     charged   0.54 [ 0.36,  0.72]   0.92 [ 0.75,  1.09]
+                     label     0.00 [-0.12,  0.13]   0.83 [ 0.59,  1.06]
+                     plain     0.51 [ 0.37,  0.65]   1.15 [ 0.97,  1.32]
+qwen2.5-14b/instruct charged   7.01 [ 6.19,  7.82]   2.02 [ 1.31,  2.73]
+                     label    -0.11 [-0.41,  0.20]   5.91 [ 4.57,  7.24]
+                     plain     4.11 [ 3.37,  4.85]   4.89 [ 4.33,  5.45]
+qwen2.5-3b/base      charged   0.37 [ 0.21,  0.52]   0.33 [ 0.26,  0.40]
+                     label    -0.01 [-0.09,  0.07]   0.40 [ 0.33,  0.46]
+                     plain     0.49 [ 0.40,  0.59]   0.26 [ 0.23,  0.30]
+qwen2.5-3b/instruct  charged   1.00 [-0.30,  2.30]   4.68 [ 3.53,  5.84]
+                     label     0.15 [-0.31,  0.62]   4.23 [ 3.02,  5.45]
+                     plain     1.57 [ 0.98,  2.15]   4.37 [ 3.34,  5.40]
+qwen2.5-7b/base      charged   0.60 [ 0.42,  0.78]   0.87 [ 0.71,  1.03]
+                     label     0.01 [-0.05,  0.07]   0.90 [ 0.74,  1.05]
+                     plain     0.64 [ 0.54,  0.73]   0.90 [ 0.72,  1.07]
+qwen2.5-7b/instruct  charged   3.89 [ 2.67,  5.11]   2.74 [ 2.01,  3.47]
+                     label    -0.00 [-0.28,  0.27]   2.90 [ 2.41,  3.39]
+                     plain     1.37 [ 0.78,  1.97]   4.00 [ 3.36,  4.64]
+
+8) NIEDOBÓR (scarce − abundant, equal_self) W JEDNOSTKACH WPŁYWU LICZB (stosunek bez przedziału)
+                  mk  niedobor     lo    hi     p  wplyw_liczb_label  stosunek
+    bielik3-11b/base     0.165  0.100 0.230 0.000              0.510     0.323
+bielik3-11b/instruct     1.994  1.514 2.475 0.000              2.772     0.719
+     gemma4-12b/base     2.709  1.983 3.435 0.000              1.419     1.909
+ gemma4-12b/instruct     0.104 -0.435 0.644 0.674             -1.552    -0.067
+     mistral-7b/base     0.147  0.103 0.192 0.000              0.373     0.395
+ mistral-7b/instruct     0.846  0.213 1.480 0.018              0.180     4.704
+    qwen2.5-14b/base     0.520  0.407 0.633 0.000              0.829     0.628
+qwen2.5-14b/instruct     0.431  0.072 0.790 0.023              5.907     0.073
+     qwen2.5-3b/base     0.209  0.151 0.267 0.000              0.395     0.529
+ qwen2.5-3b/instruct     1.030  0.795 1.264 0.000              4.232     0.243
+     qwen2.5-7b/base     0.222  0.151 0.294 0.000              0.896     0.248
+ qwen2.5-7b/instruct     1.934  1.528 2.341 0.000              2.900     0.667
+
+9) SPÓJNOŚĆ: efekt słów w equal_self przewidziany z przechyłu w kontrolach vs zmierzony (sekcja 5)
+                  mk               contrast  przewidziane_z_kontroli  zmierzone_w_equal_self
+    bielik3-11b/base   słowa: label − plain                    -0.10                   -0.15
+    bielik3-11b/base słowa: charged − plain                     0.09                   -0.05
+bielik3-11b/instruct   słowa: label − plain                     0.44                    1.50
+bielik3-11b/instruct słowa: charged − plain                    -0.00                    0.64
+     gemma4-12b/base   słowa: label − plain                     0.16                    1.00
+     gemma4-12b/base słowa: charged − plain                    -0.42                   -0.44
+ gemma4-12b/instruct   słowa: label − plain                     0.93                    1.57
+ gemma4-12b/instruct słowa: charged − plain                     0.79                    0.97
+     mistral-7b/base   słowa: label − plain                     0.23                    0.27
+     mistral-7b/base słowa: charged − plain                     0.24                    0.38
+ mistral-7b/instruct   słowa: label − plain                     0.10                    0.18
+ mistral-7b/instruct słowa: charged − plain                    -1.34                   -1.47
+    qwen2.5-14b/base   słowa: label − plain                     0.51                    0.84
+    qwen2.5-14b/base słowa: charged − plain                    -0.03                   -0.01
+qwen2.5-14b/instruct   słowa: label − plain                     4.21                    3.83
+qwen2.5-14b/instruct słowa: charged − plain                    -2.90                   -0.37
+     qwen2.5-3b/base   słowa: label − plain                     0.50                    0.38
+     qwen2.5-3b/base słowa: charged − plain                     0.13                    0.02
+ qwen2.5-3b/instruct   słowa: label − plain                     1.41                    1.46
+ qwen2.5-3b/instruct słowa: charged − plain                     0.56                    0.09
+     qwen2.5-7b/base   słowa: label − plain                     0.63                    0.81
+     qwen2.5-7b/base słowa: charged − plain                     0.04                    0.12
+ qwen2.5-7b/instruct   słowa: label − plain                     1.38                    1.95
+ qwen2.5-7b/instruct słowa: charged − plain                    -2.52                   -2.26

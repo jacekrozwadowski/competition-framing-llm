@@ -1,0 +1,13 @@
+# Analysis only (scripts/reproduce_tables.py, scripts/make_figures.py; no GPU):
+numpy
+pandas
+scipy
+matplotlib
+black
+#
+# Scoring (notebook, GPU required):
+transformers
+accelerate
+bitsandbytes
+torch
+huggingface_hub

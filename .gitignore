@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+results_partial_v3.csv
+.env
+*token*
