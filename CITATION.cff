@@ -9,4 +9,4 @@ version: "3.4"
 date-released: "2026-11-06"
 license: CC-BY-4.0
 # TODO after the Zenodo release: add   doi: 10.5281/zenodo.XXXXXXX
-repository-code: "https://github.com/jacekrozwadowski/competition-framing-llm.git"
+repository-code: "https://github.com/jacekrozwadowski/competition-framing-llm"

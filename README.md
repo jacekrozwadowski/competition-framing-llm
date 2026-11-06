@@ -25,7 +25,7 @@ ewolucyjnej ani autonomicznych celów modeli.
 ## Reproduce the tables (no GPU, a few minutes)
 
 ```bash
-pip install numpy pandas scipy matplotlib
+pip install -r requirements.txt
 python scripts/reproduce_tables.py --log logs/wyniki_v3.4.txt   # exits 0 if all 422 report lines match
 python scripts/make_figures.py                                  # optional
 ```

@@ -494,9 +494,7 @@ Szersze znaczenie uzyskanych wyników ma przede wszystkim charakter metodologicz
 
 \section*{Informacja o odtwarzalności eksperymentu}
 
-% TODO przed publikacją: zdeponować materiały i wpisać adres repozytorium.
-Implementacja generatora promptów oraz procedur pomiaru i analizy (notebook v3.4) odpowiada przebiegowi, którego wyniki przedstawiono w pracy. Surowy plik \texttt{results\_raw\_v3.csv} (41\,472 wiersze, dwanaście wariantów modeli), wyeksportowane tabele efektów i \texttt{lean}, dokładne identyfikatory rewizji modeli oraz środowisko z przypiętymi wersjami oprogramowania nie są jeszcze udostępnione publicznie. Analiza z notebooka odtwarza wartości z tabel na podstawie surowego pliku wyników. Niniejszy manuskrypt nie deklaruje, że brakujące artefakty z pierwotnego przebiegu zostały niezależnie odtworzone.
-
+Surowe wyniki (\texttt{results\_raw\_v3.csv}, 41\,472 wiersze, dwanaście wariantów modeli), notebook Colab użyty do pomiaru (v3.4), skrypty odtwarzające tabele i rysunki, wyeksportowane tabele efektów i \texttt{lean}, dziennik analizy oraz źródło tego manuskryptu są dostępne w repozytorium \url{https://github.com/jacekrozwadowski/competition-framing-llm}, zarchiwizowanym w Zenodo (DOI: \texttt{10.5281/zenodo.XXXXXXX}). Kod udostępniono na licencji MIT, dane i tekst na licencji CC BY 4.0. Skrypt \texttt{scripts/reproduce\_tables.py} odtwarza wszystkie wartości z tabel na podstawie surowego pliku wyników bez GPU. Pliku \texttt{docs/models.md} zawiera identyfikatory rewizji modeli, wersje oprogramowania i parametry uruchomienia. Wagi modeli nie są częścią repozytorium i podlegają własnym licencjom; modele Gemma i Bielik wymagają zgody na licencję w Hugging Face. Mniejsze modele mierzono na GPU NVIDIA L4, większe na NVIDIA G4. Identyfikatory rewizji zapisano po przebiegu (data: 2026-11-06), więc zakładają, że repozytoria modeli nie zmieniły się od pomiaru. Dokładne odtworzenie pomiaru na GPU nie zostało niezależnie potwierdzone.
 
 \appendix
 \section{Analiza wrażliwości: wszystkie dwanaście wariantów}\label{app:sens}
